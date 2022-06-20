@@ -1,59 +1,54 @@
 {
-    "name": "CodexunMusicBot",
+    "name": "⌯ Source zoro ˹♻️˼⁩",
     "description": "Telegram Music Bot from Team Codexun allows you to stream music trought the telegram voice chat feature.",
-   "logo": "https://telegra.ph/file/7c8fc17112d22814da2e9.jpg",
+   "logo": "https://telegra.ph//file/648ea11f2cb8a8897e7fc.jpg",
     "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
-    "repository": "https://github.com/PavanMagar/CodexunMusic",
+    "repository": "https://github.com/bhkvlldu/MusicBot",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
-            "description": "fill with the pyrogram session string of your assistant account",
+            "description": "ضع كود بايروجرام حبيبي",
             "required": true
         },
         "OWNER_ID": {
-            "description": "fill with your telegram id as the owner of the bot",
+            "description": "ايدي المطور",
             "required": true,
-            "value": "2056407064"
+            "value": "1419690087"
         },
         "ASSID": {
-            "description": "fill with telegram id of your assistant account",
+            "description": "",
             "required": true,
             "value": ""
         },
         "ASSNAME": {
-            "description": "fill with telegram name of your assistant account",
+            "description": "حط اي حاجه",
             "required": true,
             "value": ""
         },
         "ASSUSERNAME": {
-            "description": "fill with telegram username of your assistant account without @",
+            "description": "يوز الحساب المساعد بدون @",
             "required": true,
             "value": ""
         },
         "BOT_ID": {
-            "description": "fill with telegram id of your bot",
+            "description": "ايدي البوت بتاعك",
             "required": true,
             "value": ""
         },
         "BOT_USERNAME": {
-            "description": "fill with telegram username of bot without @",
+            "description": "يوز البوت بدون @",
             "required": true,
             "value": ""
         },
         "BOT_NAME": {
-            "description": "fill with telegram name of bot",
+            "description": "اسم البوت",
             "required": true,
             "value": ""
         },
         "SUPPORT": {
-            "description": "fill with your bot support group, please fill valid username",
+            "description": "رابط جروب الدعم",
             "required": false,
-            "value": "TeamCodexun"
-        },
-        "UPDATE": {
-            "description": "fill with your bot update channel, please fill valid username",
-            "required": false,
-            "value": "Codexun"
+            "value": "MB_2k_PY"
         },
         "HEROKU_API_KEY": {
             "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -66,49 +61,44 @@
             "value": ""
         },
         "UPSTREAM_REPO": {
-            "description": "If you don't know this, Leave it as is or in /skip",
-            "value": "https://github.com/PavanMagar/CodexunMusicBot",
+            "description": "الجت هب ",
+            "value": "https://github.com/bhkvlldu/MusicBot",
             "required": true
         },
         "UPSTREAM_BRANCH": {
-            "description": "Repo branch name, if you don't know, go to /skip",
+            "description": "سبها و بطل لعب",
             "value": "master",
             "required": true
         },
-        "START_IMG": {
-            "description": "Set your own music bot image which comes after /start command in bots pm",
-            "required": true,
-            "value": ""
-        },
         "API_ID": {
-            "description": "your Api ID from my.telegram.org/apps",
+            "description": "ايبي ايدي ضع هنا my.telegram.org/apps",
             "required": true,
             "value": ""
         },
         "API_HASH": {
-            "description": "your Api Hash from my.telegram.org/apps",
+            "description": "ايبي هاش ضع هنا my.telegram.org/apps",
             "required": true,
             "value": ""
         },
         "SUDO_USERS": {
-            "description": "fill with the user id who can you want to set as sudo user (separate with space).",
+            "description": "ايدي المطورين و سبها لو مفيش غيرك",
             "required": true,
-            "value": "2056407064"
+            "value": "1419690087"
         },
         "DURATION_LIMIT": {
-            "description": "filled, don't change this !",
+            "description": "سبها !",
             "required": true,
             "value": "180"
         },
         "BOT_TOKEN": {
-            "description": "fill with your bot token get from @BotFather on telegram",
+            "description": "حط توكن البوت يا روحي",
             "required": true,
             "value": ""
         },
         "MONGO_DB_URI": {
-            "description": "fill with the mongodb url get from mongodb.com (don't use mine below !)",
+            "description": "سبها",
             "required": true,
-            "value": ""
+            "value": "mongodb://mongo:bJw7qSyg16WEGlrphSbV@containers-us-west-21.railway.app:6352"
         }
     },
     "buildpacks": [
