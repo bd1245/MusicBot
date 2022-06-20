@@ -107,7 +107,7 @@ async def resume(_, message: Message):
         )
 
 
-@app.on_message(command(["end", "oe"]) & other_filters)
+@app.on_message(command(["end", "oe", "اسكت", "توقف"]) & other_filters)
 async def stop(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(
@@ -135,7 +135,7 @@ async def stop(_, message: Message):
         )
 
 
-@app.on_message(command(["skip", "os"]) & other_filters)
+@app.on_message(command(["skip", "os", "تخطي"]) & other_filters)
 async def skip(_, message: Message):
     if message.sender_chat:
         return await message.reply_text(

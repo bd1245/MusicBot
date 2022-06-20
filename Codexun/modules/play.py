@@ -195,7 +195,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
 # play
 @Client.on_message(
-    command(["play", f"play@{BOT_USERNAME}"])
+    command(["/play", f"/play@{BOT_USERNAME}", "شغل", "تشغيل"])
     & filters.group
     & ~filters.edited
     & ~filters.forwarded

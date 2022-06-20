@@ -11,7 +11,7 @@ from Codexun.tgcalls import client as USER
 
 
 @app.on_message(
-    command(["userbotjoin"]) & ~filters.private & ~filters.bot
+    command(["userbotjoin", "انضم", "ادخل"]) & ~filters.private & ~filters.bot
 )
 @errors
 async def addchannel(client, message):
