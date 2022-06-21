@@ -109,7 +109,7 @@ fifth_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200% 🔊", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -131,7 +131,7 @@ fourth_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -153,7 +153,7 @@ third_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -175,7 +175,7 @@ second_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -197,7 +197,7 @@ first_keyboard = InlineKeyboardMarkup(
             InlineKeyboardButton("200%", callback_data="fifth"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -211,8 +211,8 @@ highquality_keyboard = InlineKeyboardMarkup(
         ],[   InlineKeyboardButton("High Quality ✅", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="❎ ¦ الـغـاء", callback_data=f"cls"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
         ],
     ]
 )
@@ -226,8 +226,8 @@ lowquality_keyboard = InlineKeyboardMarkup(
         ],[   InlineKeyboardButton("High Quality", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="❎ ¦ الـغـاء", callback_data=f"cls"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
         ],
     ]
 )
@@ -241,8 +241,8 @@ mediumquality_keyboard = InlineKeyboardMarkup(
         ],[   InlineKeyboardButton("High Quality", callback_data="high"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
-            InlineKeyboardButton(text="❎ ¦ الـغـاء", callback_data=f"cls"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="Close 🗑️", callback_data=f"cls"),
         ],
     ]
 )
@@ -251,11 +251,11 @@ dbclean_keyboard = InlineKeyboardMarkup(
     [
         [
             
-            InlineKeyboardButton("نعم ، تابع !", callback_data="cleandb"),],
-        [    InlineKeyboardButton("كلا ، إلغاء !", callback_data="cbmenu"),
+            InlineKeyboardButton("Yes, Proceed !", callback_data="cleandb"),],
+        [    InlineKeyboardButton("Nope, Cancel !", callback_data="cbmenu"),
             
         ],[
-            InlineKeyboardButton(text="↩️ ¦ رجــوع", callback_data=f"cbmenu"),
+            InlineKeyboardButton(text="⬅️ Back", callback_data=f"cbmenu"),
         ],
     ]
 )
@@ -263,19 +263,19 @@ menu_keyboard = InlineKeyboardMarkup(
     [
         [
             
-            InlineKeyboardButton("▶️", callback_data="resumevc"),
-            InlineKeyboardButton("⏸", callback_data="pausevc"),
-            InlineKeyboardButton("⏭️", callback_data="skipvc"),
-            InlineKeyboardButton("⏹", callback_data="stopvc"),
+            InlineKeyboardButton("▷", callback_data="resumevc"),
+            InlineKeyboardButton("II", callback_data="pausevc"),
+            InlineKeyboardButton("‣‣I", callback_data="skipvc"),
+            InlineKeyboardButton("▢", callback_data="stopvc"),
             
         ],[
-            InlineKeyboardButton(text="مقدار", callback_data=f"fifth"),
-             InlineKeyboardButton(text="جودة", callback_data=f"high"),
+            InlineKeyboardButton(text="Volume", callback_data=f"fifth"),
+             InlineKeyboardButton(text="Quality", callback_data=f"high"),
         ],[
             InlineKeyboardButton(text="CleanDB", callback_data=f"dbconfirm"),
              InlineKeyboardButton(text="About", callback_data=f"nonabout"),
         ],[
-             InlineKeyboardButton(text="❎ ¦ الـغـاء", callback_data=f"cls"),
+             InlineKeyboardButton(text="🗑️ Close Menu", callback_data=f"cls"),
         ],
     ]
 )
@@ -507,7 +507,7 @@ async def cbabout(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**About {BOT_NAME} Bot 💡**
 
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME})** برنامج Music Bot هو الروبوت المصمم بواسطة @{UPDATE} لتشغيل موسيقى عالية الجودة وغير قابلة للكسر في الدردشة الصوتية الجماعية.
+**[{BOT_NAME}](https://t.me/{BOT_USERNAME})** برنامج Music Bot هو الروبوت المصمم بواسطة @MK_1B_PY لتشغيل موسيقى عالية الجودة وغير قابلة للكسر في الدردشة الصوتية الجماعية.
 
 يساعدك هذا الروبوت على تشغيل الموسيقى والبحث عن الموسيقى من youtube وتنزيل الموسيقى من خادم youtube والعديد من الميزات الأخرى المتعلقة بميزة الدردشة الصوتية telegram..
 
@@ -516,7 +516,7 @@ async def cbabout(_, query: CallbackQuery):
             [
               [
                     InlineKeyboardButton("🪄 ¦ الـدعـم", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("⚙️ ¦ الـسورس", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("⚙️ ¦ الـسورس", url=f"https://t.me/MK_1B_PY")
                 ],
             [InlineKeyboardButton("💭 ¦ لـي تنـصيـب بـوتـك مجـاني", url=f"https://t.me/MK_1B_PY/1124")],
             [InlineKeyboardButton("↩️ ¦ رجــوع", callback_data="cbhome")]]
@@ -619,6 +619,7 @@ async def cbhome(_, query: CallbackQuery):
            ]
         ),
     )
+
 
 @Client.on_callback_query(filters.regex(pattern=r"^(cls)$"))
 async def closed(_, query: CallbackQuery):
@@ -838,7 +839,7 @@ async def nonabout(_, query: CallbackQuery):
             [
               [
                     InlineKeyboardButton("🪄 ¦ الـدعـم", url=f"https://t.me/{SUPPORT}"),
-                    InlineKeyboardButton("⚙️ ¦ الـسورس", url=f"https://t.me/{UPDATE}")
+                    InlineKeyboardButton("⚙️ ¦ الـسورس", url=f"https://t.me/MK_1B_PY")
                 ],
               [InlineKeyboardButton("↩️ ¦ رجــوع", callback_data="cbmenu")]]
         ),
