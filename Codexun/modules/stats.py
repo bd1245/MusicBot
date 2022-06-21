@@ -17,7 +17,7 @@ from pyrogram.types import (
     Message,
 )
 from Codexun import BOT_NAME, BOT_USERNAME
-from Codexun.config import BOT_NAME
+from Codexun.config import BOT_NAME, BOT_USERNAME
 from Codexun.config import IMG_1
 
 import psutil
@@ -117,7 +117,7 @@ async def gstats(_, message):
         pass
     uptime = await bot_sys_stats()
     response = await message.reply_photo(
-        photo=f"{IMG_1}",
+        photo=f"https://t.me/{BOT_USERNAME}",
         caption=f"""Getting Stats..."""
     )
     end = datetime.now()
