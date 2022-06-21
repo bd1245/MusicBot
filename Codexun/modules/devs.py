@@ -21,7 +21,7 @@ from Codexun.modules import check_heroku
 from Codexun.database.functions import start_restart_stage
 
 
-@app.on_message(command(["rebootmusic", "restart"]) & filters.user(OWNER_ID))
+@app.on_message(command(["/rebootmusic", "/restart"]) & filters.user(OWNER_ID))
 @check_heroku
 async def gib_restart(client, message, hap):
     msg_ = await message.reply_text(f"🔄 `- Restarting...`\n\nit will be take few seconds to start again, please wait...\n\n**Bot - {BOT_NAME}** 🤖")
@@ -41,10 +41,10 @@ async def edit_or_reply(msg: Message, **kwargs):
     spec = getfullargspec(func.__wrapped__).args
     await func(**{k: v for k, v in kwargs.items() if k in spec})
 
-@Client.on_message(command("update") & filters.user(OWNER))
+@Client.on_message(command("/update") & filters.user(OWNER))
 @errors
 async def update(_, message: Message):
-    m = subprocess.check_output(["git", "pull"]).decode("UTF-8")
+    m = subprocess.check_output(["/git", "/pull"]).decode("UTF-8")
     if str(m[0]) != "A":
         x = await message.reply_text("Found Update! updating...")
         await start_restart_stage(x.chat.id, x.message_id)
@@ -66,7 +66,7 @@ async def edit_or_reply(msg: Message, **kwargs):
     await func(**{k: v for k, v in kwargs.items() if k in spec})
 
 
-@app.on_message(command(["exec", "em"]) & ~filters.edited)
+@app.on_message(command(["/exec", "/em"]) & ~filters.edited)
 @sudo_users_only
 async def executor(client, message):
     if len(message.command) < 2:
